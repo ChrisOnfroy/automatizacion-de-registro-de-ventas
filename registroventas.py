@@ -18,9 +18,9 @@ def registerventas():
                 if name_product and not name_product.isdigit():
                     product_bol = False
                 elif name_product.isdigit():
-                    print("Error: El nombre del producto no puede ser solo números")
+                    print("Error: the name to product only cant numbers")
                 else:
-                    print("Error: El nombre del producto no puede estar vacío")
+                    print("Error: the name of the product cant empty")
             
             price_bol= True            
             while price_bol:
@@ -29,9 +29,9 @@ def registerventas():
                     if price_unitario > 0:
                         price_bol = False
                     else:
-                        print("Error: El precio debe ser un número positivo")
+                        print("Error: the price to product is only positive")
                 except ValueError:
-                    print("Error: Por favor ingresa un número válido")
+                    print("Error: please enter a valide number")
             
             amount_bol = True
             while amount_bol:
@@ -40,9 +40,9 @@ def registerventas():
                     if amount_sales > 0:
                         break
                     else:
-                        print("Error: La cantidad debe ser un número positivo")
+                        print("Error: the quantity is only positive")
                 except ValueError:
-                    print("Error: Por favor ingresa un número válido")
+                    print("Error: please enter a valide number")
 
             sales[counter] = [name_product, price_unitario ,amount_sales]
 
