@@ -1,10 +1,10 @@
-def historial_ventas(ventas, valor):
-    print("\nRESUMEN DE VENTAS DEL DÍA")
+def historial_sales(sales, value):
+    print("\nDAILY SALES SUMMARY")
     print()
     
-    for producto in ventas.values():
-        print(f"Producto: {producto[0]}")
-        print(f"Cantidad total vendida: {producto[2]}")
+    for product in sales.values():
+        print(f"Product: {product[0]}")
+        print(f"total amount sales: {product[2]}")
         print()
     
-    print(f"Total recaudado: ${valor}")
+    print(f"total raised: ${value}")

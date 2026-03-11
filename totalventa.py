@@ -1,5 +1,5 @@
-def calculototal(cantidad, precio):
+def totalcalculation(amount, price):
     
-    totalventas = cantidad * precio
+    totalsale = amount * price
     
-    return totalventas
+    return totalsale

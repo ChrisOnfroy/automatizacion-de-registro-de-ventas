@@ -1,35 +1,35 @@
-from totalventa import calculototal
-from historialventa import historial_ventas
+from totalventa import totalcalculation
+from historialventa import historial_sales
 def registerventas():
     is_true = True
-    contador = 0
-    ventas = {}
-    valor = 0
+    counter = 0
+    sales = {}
+    values = 0
 
     while is_true :
-        contador += 1 
+        counter += 1 
         print("-------------------------------------------")
-        nombre_producto = input("Nombre del producto: ")
-        precio_unitario = int(input("Precio unitario: "))
-        cantidad_vendida = int(input("Cantidad vendida: "))
+        name_product = input("Product : ")
+        price_unitario = int(input("Price : "))
+        amount_sales = int(input("amount : "))
 
-        ventas[contador] = [nombre_producto, precio_unitario, cantidad_vendida]
+        sales[counter] = [name_product, price_unitario ,amount_sales]
     
-        nueva_venta = int(input("""Desea ingresar otra venta?:
-        1 → SI
-        2 → NO 
-        digite →  """))
+        new_sale = int(input("""Do you want to enter another sale?:
+        1 → Yes
+        2 → NO
+        Enter →  """))
         print("-------------------------------------------")
-        cantidad = ventas[contador][2] 
-        precio  = ventas[contador][1]
+        amount = sales[counter][2] 
+        price  = sales[counter][1]
         
-        individual_venta = calculototal(cantidad, precio)
+        individual_sale = totalcalculation(amount, price)
         
-        valor += individual_venta
-        
-        if nueva_venta == 2 :
+        values += individual_sale
+                
+        if new_sale == 2 :
             print("-------------------------------------------")
-            historial_ventas(ventas, valor)
+            historial_sales(sales, values)
             print("-------------------------------------------")
             is_true = False
             
