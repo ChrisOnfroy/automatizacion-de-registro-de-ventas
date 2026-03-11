@@ -6,3 +6,4 @@ print("Welcome to the app!")
 print("----------------------------------")
 print("|  AUTOMATIZATION REGISTER SALES  |")
 print("----------------------------------")
+

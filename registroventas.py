@@ -12,9 +12,9 @@ def registerventas():
         ventas[contador] = [nombre_producto, precio_unitario, cantidad_vendida]
     
         nueva_venta = int(input("""Desea ingresar otra venta?:
-        1 = SI
-        2 = NO 
-        """))
+        1 → SI
+        2 → NO 
+        digite →  """))
         if nueva_venta == 2 :
             print(ventas)
             return False
