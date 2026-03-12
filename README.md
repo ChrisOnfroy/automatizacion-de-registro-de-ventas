@@ -1,8 +1,70 @@
 # AUTOMATIZATION REGISTER SALES
 
-first create a featured to register sales, then create variables, dictionary and one list, the product, amounts and prices to sale
-i use while whit boolean variable, for the user write to console the product, price and amount then this is added to a dictionary where the "key" is a counter create to me
-the counter initate in one and is the primary key to the new sale, then create a featured to calculation individual sale 
-i use import calculation sales in register sales, then call whit the key in this case the present number to the counter to do operation of two items to the list
-i use a variable for save the operation and the others, this is especial because save the past operation and the present then add them
-i cretae a condition, where the user not register new sale, show sales historials and total sales.
+Sales Registration Program Documentation
+What this program does
+This program helps register product sales. You can enter many products and the program will calculate the total value of all sales.
+
+How it works
+Step 1: Import functions
+
+from totalventa import totalcalculation - brings a function that calculates the total price of one sale
+
+from historialventa import historial_sales - brings a function that shows all sales information
+
+Step 2: The main function - registerventas()
+
+The program asks you to enter information for each product:
+
+Product name - cannot be empty and cannot be only numbers
+
+Price - must be a positive number
+
+Amount - must be a positive number
+
+The program saves each sale in a dictionary called sales.
+
+Step 3: Continue or finish
+
+After each product, the program asks: "Do you want to enter another sale?"
+
+Press 1 for Yes - you can enter more products
+
+Press 2 for No - the program shows all sales information and total
+
+Step 4: Show results
+
+When you finish, the program:
+
+Shows a list of all products you entered
+
+Shows the total value of all sales
+
+Variables used
+is_true - controls the main loop (True = continue, False = stop)
+
+counter - counts how many products you entered
+
+sales - a dictionary that stores all product information
+
+values - adds up the total of all sales
+
+product_bol, price_bol, amount_bol - control loops for user input
+
+individual_sale - the total for one product (amount × price)
+
+Error messages
+The program checks for mistakes:
+
+"Error: the name to product only cant numbers" - when product name is only numbers
+
+"Error: the name of the product cant empty" - when product name is empty
+
+"Error: the price to product is only positive" - when price is zero or negative
+
+"Error: the quantity is only positive" - when amount is zero or negative
+
+"Error: please enter a valide number" - when you don't type a number
+
+"No validated" - when you choose a number that is not 1 or 2
+
+"plesae write a num" - when you don't type a number for the menu
