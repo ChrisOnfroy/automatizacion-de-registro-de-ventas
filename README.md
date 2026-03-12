@@ -1,70 +1,102 @@
-# AUTOMATIZATION REGISTER SALES
+#  **AUTOMATIZATION REGISTER SALES**
 
-Sales Registration Program Documentation
-What this program does
-This program helps register product sales. You can enter many products and the program will calculate the total value of all sales.
+## **Sales Registration Program Documentation**
 
-How it works
-Step 1: Import functions
+---
 
-from totalventa import totalcalculation - brings a function that calculates the total price of one sale
+## **What this program does**
 
-from historialventa import historial_sales - brings a function that shows all sales information
+This program helps **register product sales**. You can enter many products and the program will calculate the **total value** of all sales.
 
-Step 2: The main function - registerventas()
+---
 
-The program asks you to enter information for each product:
+##  **How it works**
 
-Product name - cannot be empty and cannot be only numbers
+###  **Step 1: Import functions**
 
-Price - must be a positive number
+ Brings a function that **calculates the total price** of one sale
+  Brings a function that **shows all sales information**
 
-Amount - must be a positive number
+---
 
-The program saves each sale in a dictionary called sales.
+###  **Step 2: The main function - `registerventas()`**
 
-Step 3: Continue or finish
+The program asks you to enter information for **each product**:
 
-After each product, the program asks: "Do you want to enter another sale?"
+| Field | Requirement |
+|:------|:------------|
+|  **Product name** | Cannot be empty and cannot be only numbers |
+|  **Price** | Must be a **positive** number |
+|  **Amount** | Must be a **positive** number |
 
-Press 1 for Yes - you can enter more products
+The program saves each sale in a dictionary called **`sales`**.
 
-Press 2 for No - the program shows all sales information and total
+---
 
-Step 4: Show results
+###  **Step 3: Continue or finish**
+
+After each product, the program asks:
+
+| Option | Action |
+|:-------|:-------|
+| **1** |  You can **enter more products** |
+| **2** |  The program **shows all sales information and total** |
+
+---
+
+###  **Step 4: Show results**
 
 When you finish, the program:
 
-Shows a list of all products you entered
+ Shows a **list of all products** you entered  
+ Shows the **total value** of all sales
 
-Shows the total value of all sales
+---
 
-Variables used
-is_true - controls the main loop (True = continue, False = stop)
+##  **Variables used**
 
-counter - counts how many products you entered
+| Variable | Description |
+|:---------|:-------------|
+| `is_true` | Controls the main loop (`True` = continue, `False` = stop) |
+| `counter` | Counts how many products you entered |
+| `sales` | A dictionary that stores all product information |
+| `values` | Adds up the total of all sales |
+| `product_bol` | Controls loop for product name input |
+| `price_bol` | Controls loop for price input |
+| `amount_bol` | Controls loop for amount input |
+| `individual_sale` | The total for one product (amount × price) |
 
-sales - a dictionary that stores all product information
+---
 
-values - adds up the total of all sales
+##  **Error messages**
 
-product_bol, price_bol, amount_bol - control loops for user input
-
-individual_sale - the total for one product (amount × price)
-
-Error messages
 The program checks for mistakes:
 
-"Error: the name to product only cant numbers" - when product name is only numbers
+| Error Message | When it appears |
+|:---------------|:-----------------|
+| `"Error: the name to product only cant numbers"` | When product name is **only numbers** |
+| `"Error: the name of the product cant empty"` | When product name is **empty** |
+| `"Error: the price to product is only positive"` | When price is **zero or negative** |
+| `"Error: the quantity is only positive"` | When amount is **zero or negative** |
+| `"Error: please enter a valide number"` | When you don't type a **number** |
+| `"No validated"` | When you choose a number that is **not 1 or 2** |
+| `"plesae write a num"` | When you don't type a number for the **menu** |
 
-"Error: the name of the product cant empty" - when product name is empty
+---
 
-"Error: the price to product is only positive" - when price is zero or negative
+##  **Summary**
 
-"Error: the quantity is only positive" - when amount is zero or negative
+This program makes it **easy to register sales** by:
 
-"Error: please enter a valide number" - when you don't type a number
+| # | Feature |
+|:--|:--------|
+| 1️ |  **Validating** all user inputs |
+| 2️ |  **Storing** information in an organized way |
+| 3️ |  **Calculating** totals automatically |
+| 4️ |  **Showing** a complete sales history |
 
-"No validated" - when you choose a number that is not 1 or 2
+---
 
-"plesae write a num" - when you don't type a number for the menu
+>  **Ready to use!** Just run the function `registerventas()` and start registering your sales.
+
+---
